@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.wrapper, .wrapper * {
+.flx {
   display: flex;
 }
 
@@ -23,7 +23,32 @@
 
 .side-bar {
   background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 350px;
+}
+
+.side-bar>.down {
+  background-color: green;
+}
+
+.contents {
+  overflow: auto;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.contents>.up {
+ background: green;
+ flex-basis: 50px;
+}
+
+.contents>.down {
+  overflow: auto;
+}
+
+.contents>.down>* {
+  height: 2000px;
 }
 
 .bottom-container {
