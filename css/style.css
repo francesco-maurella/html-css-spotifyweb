@@ -5,12 +5,19 @@
 }
 
 body {
+  background-color: #141922;
   color: #FFF;
+  font-family: 'Signika';
+  font-size: 15px;
 }
 
 body a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+body a:hover {
+  color: #FFF;
 }
 
 ul {
@@ -22,10 +29,37 @@ ul {
   display: flex;
 }
 
-.bld {
-  font-weight: bold;
+.oflw-auto {
+  overflow: auto;
 }
 /* / Utility CSS */
+
+/* Utility TEXT PROPRIETIES */
+.txt-l {
+  font-size: 1.2em;
+}
+
+.txt-s {
+  font-size: 0.9em;
+}
+
+.txt-xs {
+  font-size: 0.8em;
+}
+
+.txt-bld {
+  font-weight: bold;
+}
+
+.txt-uppcs {
+  text-transform: uppercase;
+}
+
+.txt-col-wht {
+  color: #FFF;
+}
+/* Utility TEXT PROPRIETIES */
+
 
 
 .wrapper {
@@ -34,16 +68,18 @@ ul {
   height: 100vh;
 }
 
+/* MAIN TOP SIDE */
 .top-container {
   height: calc(100% - 90px);
 }
-
+/* Sidebar */
 .side-bar {
-  flex-basis: 250px;
+  flex-basis: 230px;
   background-color: #000;
   flex-direction: column;
   padding: 20px;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .side-bar .logo {
@@ -55,6 +91,14 @@ ul {
   line-height: 1.8em;
 }
 
+.side-bar .playlist ul {
+  max-height: 200px;
+}
+
+.side-bar>.bottom {
+  height: 80px;
+}
+
 .side-bar>.bottom>*:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -63,18 +107,29 @@ ul {
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
+/* / Sidebar */
 
-.contents {
-  background-color: #141922;
-  overflow: auto;
-  flex-direction: column;
-  flex-basis: 100%;
+/* Contents */
+#contents {
+  flex-basis: calc(100% - 230px);
 }
 
-.contents>.top {
+#contents>.top {
  background-color: rgba(0,0,0,.6);
- overflow: hidden;
  height: 90px;
+ padding: 15px;
+ align-items: center;
+ justify-content: flex-end;
+}
+
+#contents>.top>.upg-btn {
+  padding: 15px;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+}
+
+#contents>.top>.upg-btn:hover {
+  transform: scale(1.1);
 }
 
 .menu-row .flx {
@@ -82,20 +137,23 @@ ul {
 }
 
 .menu-row .flx>* {
-  justify-content: center;
   padding: 18px;
 }
 
 .contents>.bottom {
   height: calc(100% - 90px);
-  overflow: auto;
 }
 
 .contents>.bottom>* {
   height: 2000px;
 }
+/* / Contents */
+/* / MAIN TOP SIDE */
 
+
+/* FIX BOTTOM SIDE */
 .bottom-container {
   height: 90px;
   background-color: red;
 }
+/* / FIX BOTTOM SIDE */

@@ -6,7 +6,7 @@
     <title>HTML/CSS - FLEXBOX [Spotify Web]</title>
     <link rel="icon" href="img/00-favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,7 +15,7 @@
     <div class="wrapper">
 
       <!-- MAIN TOP SIDE -->
-      <div class="top-container flx">
+      <main class="top-container flx">
         <!-- Sidebar -->
         <div class="side-bar flx">
 
@@ -32,10 +32,10 @@
               <li><a href="#">La tua libreria</a></li>
             </ul>
 
-            <div class="">
-              <h2>Playlist</h2>
+            <div class="playlist">
+              <h2 class="txt-uppcs">Playlist</h2>
               <a href="#">Crea Playlist</a>
-              <ul>
+              <ul class="oflw-auto">
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
@@ -57,7 +57,7 @@
             </div>
             <div>
               <i class="fa fa-user-circle" aria-hidden="true"></i>
-              <a href="#" class="bld">John Doe</a>
+              <a href="#" class="txt-bld">John Doe</a>
             </div>
           </div>
           <!-- / bottom side -->
@@ -65,22 +65,23 @@
         <!-- / Sidebar -->
 
         <!-- Contenuti -->
-        <section class="contents flx">
+        <section id="contents">
           <!-- upgrade band-->
-          <div class="top">
-            Head
+          <div class="top flx">
+            <a href="#" class="upg-btn txt-uppcs txt-col-wht">Effettua l'Upgrade</a>
           </div>
           <!-- / upgrade band-->
           <!-- contents-->
-          <div class="bottom">
+          <div class="bottom oflw-auto">
             <div>
               <nav class="menu-row">
-                <ul class="flx">
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
+                <ul class="flx txt-uppcs">
+                  <li><a href="#">In Edivenza</a></li>
+                  <li><a href="#">Podcast</a></li>
+                  <li><a href="#">Classifiche</a></li>
+                  <li><a href="#">Generi e Mood</a></li>
+                  <li><a href="#">Nuove uscite</a></li>
+                  <li><a href="#">Scopri</a></li>
                 </ul>
 
               </nav>
@@ -98,7 +99,7 @@
           <!-- / contents-->
         </section>
         <!-- / Contenuti -->
-      </div>
+      </main>
       <!-- / MAIN TOP SIDE -->
 
       <!-- FIX BOTTOM SIDE-->
