@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML/CSS - FLEXBOX [Spotify Web]</title>
+    <link rel="icon" href="img/00-favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,46 +12,102 @@
   </head>
   <body>
 
-    <div class="wrapper flx">
+    <div class="wrapper">
 
-      <!-- TOP SIDETOP SIDE -->
+      <!-- MAIN TOP SIDE -->
       <div class="top-container flx">
-        <!-- / Sidebar -->
-        <div class="side-bar flx">
-          <nav class="up">
-            Sidebar
-          </nav>
-          <div class="down">
-            Bottom sd-bar
-          </div>
-        </div>
         <!-- Sidebar -->
+        <div class="side-bar flx">
+
+          <!-- top side -->
+          <nav class="top">
+
+            <div class="logo">
+              <img src="img/01-logo.svg" alt="Spotify">
+            </div>
+
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Cerca</a></li>
+              <li><a href="#">La tua libreria</a></li>
+            </ul>
+
+            <div class="">
+              <h2>Playlist</h2>
+              <a href="#">Crea Playlist</a>
+              <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- / top side -->
+
+          <!-- bottom side -->
+          <div class="bottom">
+
+            <div>
+              <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+              <a href="#">Installa App</a>
+            </div>
+            <div>
+              <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <a href="#" class="bld">John Doe</a>
+            </div>
+          </div>
+          <!-- / bottom side -->
+        </div>
+        <!-- / Sidebar -->
+
         <!-- Contenuti -->
         <section class="contents flx">
           <!-- upgrade band-->
-          <div class="up">
+          <div class="top">
             Head
           </div>
           <!-- / upgrade band-->
           <!-- contents-->
-          <div class="down">
-            <div class="">
-              Contents
+          <div class="bottom">
+            <div>
+              <nav class="menu-row">
+                <ul class="flx">
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+
+              </nav>
+              <div class="recents-row">
+
+              </div>
+              <div class="created-row">
+
+              </div>
+              <div class="artist-row">
+
+              </div>
             </div>
           </div>
           <!-- / contents-->
         </section>
         <!-- / Contenuti -->
       </div>
-      <!-- / TOP SIDE -->
+      <!-- / MAIN TOP SIDE -->
 
-      <!-- BOTTOM SIDE-->
+      <!-- FIX BOTTOM SIDE-->
       <footer class="bottom-container">
         <section class="player">
           Playbar
         </section>
       </footer>
-      <!-- / BOTTOM SIDE-->
+      <!-- / FIX BOTTOM SIDE-->
 
     </div>
 
