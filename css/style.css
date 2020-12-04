@@ -141,12 +141,13 @@ ul {
 
 /* Contents */
 #contents {
-  flex-basis: calc(100% - 60px);
+  width: calc(100% - 60px);
 }
 
 #contents>.top {
   position: fixed;
   z-index: 1;
+  right: 0;
   width: calc(100% - 60px);
   height: 90px;
   background-color: rgba(0,0,0,.6);
@@ -327,7 +328,7 @@ ul {
   }
 
   #sidebar {
-    width: 230px;
+    min-width: 230px;
   }
 
   #contents {
