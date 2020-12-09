@@ -75,7 +75,7 @@ main #left-bar {
 }
 
 main #left-bar .nav-logo img {
-  width: 75%;
+  height: 28px;
 }
 
 main #left-bar .menu-nav-main img {
@@ -111,7 +111,8 @@ main #left-bar .menu-nav-profile .flx {
 }
 
 main #left-bar .menu-nav-profile .flx .fa {
-  margin: 7px 7px 7px 0;
+  font-size: 28px;
+  margin: 7px 10px 7px 0;
 }
 
 main #left-bar .menu-nav-profile>*:first-child {
@@ -234,12 +235,13 @@ footer .player-side>*:not(:last-child) {
 }
 
 footer #player-sd-left>.play-sd-img {
-  height: 100%;
+  width: 90px;
   margin-right: 10px;
 }
 
 footer #player-sd-left>.play-sd-img>img {
-  height: 100%;
+  min-width: 25px;
+  max-width: 100%;
 }
 
 footer #player-sd-left>.play-sd-icns {
@@ -267,7 +269,7 @@ footer #player-center>.play-cntr-bttns {
 
 footer #player-center>.play-cntr-bttns>li {
   margin: 0 15px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 footer #player-center>.play-cntr-bttns .fa-play-circle-o {
@@ -335,6 +337,14 @@ footer .play-cursor-line:hover .play-cursor-point:after {
     display: none;
   }
 
+  .wrapper.txt-s {
+    font-size: 1em;
+  }
+
+  main #left-bar .nav-logo img {
+    height: 38px;
+  }
+
   main #left-bar {
     width: 230px;
   }
@@ -355,6 +365,11 @@ footer .play-cursor-line:hover .play-cursor-point:after {
 @media (min-width: 768px) {
   main #rigth-bar .album-item {
     flex-basis: calc(100% / 6 - 20px);
+  }
+
+  footer #player-center>.play-cntr-bttns>li {
+    margin: 0 15px;
+    font-size: 17px;
   }
 }
 
