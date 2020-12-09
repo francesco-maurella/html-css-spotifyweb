@@ -27,6 +27,7 @@ ul {
   width: 100vw;
   max-width: 100%;
   height: 100vh;
+  font-size: 0.8em;
 }
 
 /* Utility CSS */
@@ -80,9 +81,9 @@ main #left-bar .nav-logo img {
 
 main #left-bar .menu-nav-main img {
   height: 28px;
-  margin-right: 10px;
-  opacity: 0.5;
+  margin-bottom: 10px;
   vertical-align: middle;
+  opacity: 0.5;
 }
 
 main #left-bar .menu-nav-main img:hover {
@@ -225,7 +226,7 @@ footer {
 }
 
 footer .player-side {
-  width: 20%;
+  width: 15%;
   align-items: center;
   justify-content: center;
 }
@@ -256,10 +257,11 @@ footer #player-sd-left>.play-sd-icns>* {
 }
 
 footer #player-center {
-  width: 40%;
+  width: 35%;
   margin: 0 10px;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 footer #player-center>.play-cntr-bttns {
@@ -269,7 +271,7 @@ footer #player-center>.play-cntr-bttns {
 
 footer #player-center>.play-cntr-bttns>li {
   margin: 0 15px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 footer #player-center>.play-cntr-bttns .fa-play-circle-o {
@@ -329,6 +331,10 @@ footer .play-cursor-line:hover .play-cursor-point:after {
 
 /* MEDIAQUERY */
 @media (min-width: 576px) {
+  .wrapper {
+    font-size: 1em;
+  }
+  
   .hide-xs {
     display: inline-block;
   }
@@ -337,16 +343,17 @@ footer .play-cursor-line:hover .play-cursor-point:after {
     display: none;
   }
 
-  .wrapper.txt-s {
-    font-size: 1em;
-  }
-
   main #left-bar .nav-logo img {
     height: 38px;
   }
 
   main #left-bar {
     width: 230px;
+  }
+
+  main #left-bar .menu-nav-main img {
+    margin-right: 10px;
+    margin-bottom: 0;
   }
 
   main #rigth-bar {
@@ -359,6 +366,14 @@ footer .play-cursor-line:hover .play-cursor-point:after {
 
   main #rigth-bar .album-item {
     flex-basis: calc(100% / 4 - 20px);
+  }
+
+  footer .player-side {
+    width: 20%;
+  }
+
+  footer #player-center {
+    width: 40%;
   }
 }
 
