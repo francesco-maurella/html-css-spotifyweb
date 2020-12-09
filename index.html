@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML/CSS - FLEXBOX [Spotify Web]</title>
-    <link rel="icon" href="img/00-favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/00-favicon.ico">
   </head>
   <body>
 
     <div class="wrapper">
 
       <!-- MAIN TOP SIDE -->
-      <main class="top-container flx">
-        <!-- Sidebar -->
-        <div id="sidebar" class="pdd-20 flx">
-
-          <!-- top side -->
-          <nav class="top mrg-chld-btm15">
-
-            <div class="logo">
-              <img src="img/01-logo.svg" alt="Spotify">
-            </div>
-            <ul>
+      <main class="flx">
+        <!-- Left Bar -->
+        <div id="left-bar" class="flx">
+          <nav class="pdd-15">
+            <!-- logo -->
+            <a href="https://www.spotify.com/" class="nav-logo">
+              <img src="img/01-logo-xs.svg" class="visible-xs" alt="Spotify">
+              <img src="img/01-logo.svg" class="hide-xs" alt="Spotify">
+            </a>
+            <!-- / logo -->
+            <!-- main menu -->
+            <ul class="menu-nav-main">
               <li>
                 <a href="#">
                   <img src="img/02-home.svg" alt="Home">
@@ -45,210 +46,217 @@
                 </a>
               </li>
             </ul>
-
-            <div class="playlist mrg-chld-btm15 hide-xs">
-              <h2 class="txt-uppcs">Playlist</h2>
-              <a class="txt-l" href="#">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-                Crea Playlist
-              </a>
-              <ul class="oflw-auto">
-                <li><a href="#">Nome Playlist</a></li>
-                <li><a href="#">Nome Playlist</a></li>
-                <li><a href="#">Nome Playlist</a></li>
-                <li><a href="#">Nome Playlist</a></li>
-                <li><a href="#">Nome Playlist</a></li>
-                <li><a href="#">Nome Playlist</a></li>
-                <li><a href="#">Nome Playlist</a></li>
-              </ul>
-            </div>
+            <!-- / main menu -->
           </nav>
-          <!-- / top side -->
-
-          <!-- bottom side -->
-          <div class="bottom">
-
+          <!-- playlist menu -->
+          <nav class="menu-nav-playlist hide-xs pdd-15">
+            <h2 class="txt-uppcs">Playlist</h2>
+            <a class="txt-l" href="#">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              Crea Playlist
+            </a>
+            <ul>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </nav>
+          <!-- / playlist menu -->
+          <!-- profile nav -->
+          <nav class="menu-nav-profile pdd-15">
             <div>
-              <a href="#">
-                <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+              <a href="#" class="flx">
+                <i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i>
                 <span class="hide-xs">Installa App</span>
               </a>
             </div>
             <div>
-              <a href="#" class="txt-bld">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <a href="#" class="flx">
+                <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
                 <span class="hide-xs">John Doe</span>
               </a>
             </div>
-          </div>
-          <!-- / bottom side -->
+          </nav>
+          <!-- / profile nav -->
         </div>
-        <!-- / Sidebar -->
+        <!-- / Left Bar -->
 
-        <!-- Contenuti -->
-        <section id="contents">
-          <!-- upgrade band-->
-          <div class="top pdd-20 flx">
-            <a href="#" class="upg-btn txt-uppcs txt-col-wht">Effettua l'Upgrade</a>
+        <!-- Right Bar -->
+        <div id="rigth-bar">
+          <!-- fix band-->
+          <div class="fix-band flx pdd-15">
+            <a href="#" class="upg-btn txt-uppcs pdd-15">Effettua l'Upgrade</a>
           </div>
-          <!-- / upgrade band-->
+          <!-- / fix band-->
+          <!-- horizontal menu -->
+          <ul class="menu-contents flx txt-uppcs pdd-15">
+            <li><a href="#">In Edivenza</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Classifiche</a></li>
+            <li><a href="#">Generi e Mood</a></li>
+            <li><a href="#">Nuove uscite</a></li>
+            <li><a href="#">Scopri</a></li>
+          </ul>
+          <!-- / horizontal menu -->
+          <!-- recently played -->
+          <section class="section-contents pdd-15">
+            <h2>Recently played</h2>
+            <!-- album list -->
+            <div class="album-list flx">
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/01-recent.jpg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+                <h4 class="subtitl-txt">Sottotitolo</h4>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/02-recent.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+                <h4 class="subtitl-txt">Sottotitolo</h4>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/03-recent.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+                <h4 class="subtitl-txt">Sottotitolo</h4>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/04-recent.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+                <h4 class="subtitl-txt">Sottotitolo</h4>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/05-recent.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+                <h4 class="subtitl-txt">Sottotitolo</h4>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/06-recent.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+                <h4 class="subtitl-txt">Sottotitolo</h4>
+              </a>
+            </div>
+            <!-- / album list -->
+          </section>
+          <!-- / recently played -->
 
-          <div class="bottom oflw-auto">
+          <!-- created for john doe -->
+          <section class="section-contents pdd-15">
+            <h2>Creato per John Doe</h2>
+            <!-- album list -->
+            <div class="album-list flx">
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/01-created.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img flx">
+                  <img src="img/02-created.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+              </a>
+            </div>
+            <!-- / album list -->
+          </section>
+          <!-- / created for john doe -->
 
-            <!-- nav menu contents -->
-            <nav class="pdd-20">
-              <ul class="menu-row flx txt-uppcs">
-                <li><a href="#">In Edivenza</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li><a href="#">Classifiche</a></li>
-                <li><a href="#">Generi e Mood</a></li>
-                <li><a href="#">Nuove uscite</a></li>
-                <li><a href="#">Scopri</a></li>
-              </ul>
-            </nav>
-            <!-- / nav menu contents -->
-
-            <!-- recently played -->
-            <section class="pdd-20 mrg-chld-btm15">
-              <h2>Recently played</h2>
-              <!-- album list -->
-              <div class="album-list flx">
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/01-recent.jpg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                  <h4 class="subtitl-txt">Sottotitolo</h4>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/02-recent.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                  <h4 class="subtitl-txt">Sottotitolo</h4>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/03-recent.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                  <h4 class="subtitl-txt">Sottotitolo</h4>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/04-recent.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                  <h4 class="subtitl-txt">Sottotitolo</h4>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/05-recent.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                  <h4 class="subtitl-txt">Sottotitolo</h4>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/06-recent.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                  <h4 class="subtitl-txt">Sottotitolo</h4>
-                </a>
-              </div>
-              <!-- / album list -->
-            </section>
-            <!-- / recently played -->
-
-            <!-- created for john doe -->
-            <section class="pdd-20 mrg-chld-btm15">
-              <h2>Creato per John Doe</h2>
-              <!-- album list -->
-              <div class="album-list flx">
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/01-created.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/02-created.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                </a>
-              </div>
-              <!-- / album list -->
-            </section>
-            <!-- / created for john doe -->
-
-            <!-- poupolar artists -->
-            <section id="artists" class="pdd-20 mrg-chld-btm15">
-              <h2>Artisti più popolari</h2>
-              <!-- album list -->
-              <div class="album-list flx">
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/01-artist.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                </a>
-                <a href="#" class="album-item">
-                  <div class="album-img flx">
-                    <img src="img/02-artist.jpeg" class="play-img2" alt="Recent played">
-                  </div>
-                  <h3 class="txt-col-wht">Titolo</h3>
-                </a>
-              </div>
-              <!-- / album list -->
-            </section>
-            <!-- / poupolar artists -->
-
-
-          </div>
-          <!-- / contents-->
-        </section>
-        <!-- / Contenuti -->
+          <!-- poupolar artists -->
+          <section class="section-contents pdd-15">
+            <h2>Artisti più popolari</h2>
+            <!-- album list -->
+            <div class="album-list flx">
+              <a href="#" class="album-item">
+                <div class="album-img circle flx">
+                  <img src="img/01-artist.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+              </a>
+              <a href="#" class="album-item">
+                <div class="album-img circle flx">
+                  <img src="img/02-artist.jpeg" alt="Recent played">
+                </div>
+                <h3 class="txt-col-wht">Titolo</h3>
+              </a>
+            </div>
+            <!-- / album list -->
+          </section>
+          <!-- / poupolar artists -->
+        </div>
+        <!-- / Right Bar -->
       </main>
       <!-- / MAIN TOP SIDE -->
 
-      <!-- FIX BOTTOM SIDE-->
-      <footer class="bottom-playnav flx al-center pdd-20">
-          <div class="play-side flx">
-            <div class="flx al-center">
-              <img src="img/06-recent.jpeg" alt="Brano">
-              <h3>Titolo</h3>
+      <!-- FIX BOTTOM SIDE -->
+      <footer class="flx pdd-15">
+        <!-- Player Side Left -->
+        <div id="player-sd-left" class="player-side flx">
+          <div class="play-sd-img">
+            <img src="img/06-recent.jpeg" alt="Brano">
+          </div>
+          <div class="play-sd-data txt-s">
+            <h3>Titolo</h3>
+            <span class="txt-col-gr txt-s">Brano<br>Nome</span>
+          </div>
+          <div class="play-sd-icns flx">
+            <a href="#" class="fa fa-heart-o" aria-hidden="true"></a>
+            <a href="#" class="fa fa-folder-o" aria-hidden="true"></a>
+          </div>
+        </div>
+        <!-- / Player Side Left -->
+        <!-- Player Side Center -->
+        <nav id="player-center" class="flx">
+          <!-- player buttons -->
+          <ul class="play-cntr-bttns flx">
+            <li><i class="fa fa-random"></i></li>
+            <li><i class="fa fa-step-backward" aria-hidden="true"></i></li>
+            <li><i class="fa fa-play-circle-o" aria-hidden="true"></i></li>
+            <li><i class="fa fa-step-forward" aria-hidden="true"></i></li>
+            <li><i class="fa fa-repeat" aria-hidden="true"></i></li>
+          </ul>
+          <!-- / player buttons -->
+          <!-- player cursor -->
+          <div class="play-cntr-cursor flx">
+            <div>
+              0:25
             </div>
-            <div>Icone</div>
-
-
-
-          </div>
-          <div class="play-center">
-            <ul class="buttons flx ">
-              <li><i class="fa fa-random"></i></li>
-              <li><i class="fa fa-step-backward" aria-hidden="true"></i></li>
-              <li><i class="fa fa-play-circle-o" aria-hidden="true"></i></li>
-              <li><i class="fa fa-step-forward" aria-hidden="true"></i></li>
-              <li><i class="fa fa-repeat" aria-hidden="true"></i></li>
-            </ul>
-
-            <div class="cursor flx">
-              <div class="time">
-                0:25
-              </div>
-              <div class="line">
-              </div>
-              <div class="time">
-                4:35
-              </div>
+            <div class="play-cursor-line">
+              <div class="play-cursor-point"></div>
+            </div>
+            <div>
+              4:35
             </div>
           </div>
-          <div class="play-side">
-            Volume
+          <!-- / player cursor -->
+        </nav>
+        <!-- / Player Side Center -->
+        <!-- Player Side Right -->
+        <div id="player-sd-right" class="player-side flx">
+          <i class="fa fa-list"></i>
+          <i class="fa fa-desktop"></i>
+          <i class="fa fa-volume-up"></i>
+          <div class="play-cursor-line">
+            <div class="play-cursor-point"></div>
           </div>
+        </div>
+        <!-- / Player Side Right -->
       </footer>
-      <!-- / FIX BOTTOM SIDE-->
+      <!-- FIX BOTTOM SIDE -->
 
     </div>
 
