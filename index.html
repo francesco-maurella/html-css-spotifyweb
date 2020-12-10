@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/00-favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -17,7 +17,7 @@
       <!-- MAIN TOP SIDE -->
       <main class="flx">
         <!-- Left Bar -->
-        <div id="left-bar" class="flx">
+        <div id="left-bar" class="flx oflw-hdd">
           <nav class="pdd-15">
             <!-- logo -->
             <a href="https://www.spotify.com/" class="nav-logo">
@@ -49,14 +49,13 @@
             <!-- / main menu -->
           </nav>
           <!-- playlist menu -->
-          <nav class="menu-nav-playlist hide-xs pdd-15">
+          <nav class="menu-nav-playlist oflw-auto hide-xs pdd-15">
             <h2 class="txt-uppcs">Playlist</h2>
             <a class="txt-l" href="#">
               <i class="fa fa-plus" aria-hidden="true"></i>
               Crea Playlist
             </a>
             <ul>
-              <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
               <li><a href="#">Nome Playlist</a></li>
@@ -86,7 +85,7 @@
         <!-- / Left Bar -->
 
         <!-- Right Bar -->
-        <div id="rigth-bar">
+        <div id="rigth-bar" class="oflw-auto">
           <!-- fix band-->
           <div class="fix-band flx pdd-15">
             <a href="#" class="upg-btn txt-uppcs pdd-15">Effettua l'Upgrade</a>
@@ -94,7 +93,7 @@
           <!-- / fix band-->
           <!-- horizontal menu -->
           <ul class="menu-contents flx txt-uppcs pdd-15">
-            <li><a href="#">In Edivenza</a></li>
+            <li><span class="txt-col-gr">In Edivenza</span></li>
             <li><a href="#">Podcast</a></li>
             <li><a href="#">Classifiche</a></li>
             <li><a href="#">Generi e Mood</a></li>
@@ -108,42 +107,42 @@
             <!-- album list -->
             <div class="album-list flx">
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/01-recent.jpg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
                 <h4 class="subtitl-txt">Sottotitolo</h4>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/02-recent.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
                 <h4 class="subtitl-txt">Sottotitolo</h4>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/03-recent.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
                 <h4 class="subtitl-txt">Sottotitolo</h4>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/04-recent.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
                 <h4 class="subtitl-txt">Sottotitolo</h4>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/05-recent.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
                 <h4 class="subtitl-txt">Sottotitolo</h4>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/06-recent.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
@@ -155,17 +154,20 @@
           <!-- / recently played -->
           <!-- created for john doe -->
           <section class="section-contents pdd-15">
-            <h2>Creato per John Doe</h2>
+            <div>
+              <h2>Creato per John Doe</h2>
+              <span class="txt-col-gr">Più ascolti, più accurati saranno i suggerimenti</span>
+            </div>
             <!-- album list -->
             <div class="album-list flx">
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/01-created.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img flx">
+                <div class="album-img oflw-hdd flx">
                   <img src="img/02-created.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
@@ -180,13 +182,13 @@
             <!-- album list -->
             <div class="album-list flx">
               <a href="#" class="album-item">
-                <div class="album-img circle flx">
+                <div class="album-img oflw-hdd circle flx">
                   <img src="img/01-artist.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
               </a>
               <a href="#" class="album-item">
-                <div class="album-img circle flx">
+                <div class="album-img oflw-hdd circle flx">
                   <img src="img/02-artist.jpeg" alt="Recent played">
                 </div>
                 <h3 class="txt-col-wht">Titolo</h3>
@@ -209,7 +211,7 @@
           </div>
           <div class="play-sd-data txt-s">
             <h3>Titolo</h3>
-            <span class="txt-col-gr txt-s">Brano<br>Nome</span>
+            <span class="txt-col-gr txt-s">Brano<br>Artista</span>
           </div>
           <div class="play-sd-icns flx">
             <a href="#" class="fa fa-heart-o" aria-hidden="true"></a>
@@ -221,11 +223,11 @@
         <nav id="player-center" class="flx">
           <!-- player buttons -->
           <ul class="play-cntr-bttns flx">
-            <li><i class="fa fa-random"></i></li>
-            <li><i class="fa fa-step-backward" aria-hidden="true"></i></li>
-            <li><i class="fa fa-play-circle-o" aria-hidden="true"></i></li>
-            <li><i class="fa fa-step-forward" aria-hidden="true"></i></li>
-            <li><i class="fa fa-repeat" aria-hidden="true"></i></li>
+            <li><a href="#" class="fa fa-random"></a></li>
+            <li><a href="#" class="fa fa-step-backward" aria-hidden="true"></a></li>
+            <li><a href="#" class="fa fa-play-circle-o" aria-hidden="true"></a></li>
+            <li><a href="#" class="fa fa-step-forward" aria-hidden="true"></a></li>
+            <li><a href="#" class="fa fa-repeat" aria-hidden="true"></a></li>
           </ul>
           <!-- / player buttons -->
           <!-- player cursor -->
@@ -245,9 +247,9 @@
         <!-- / Player Side Center -->
         <!-- Player Side Right -->
         <div id="player-sd-right" class="player-side flx">
-          <i class="fa fa-list"></i>
-          <i class="fa fa-desktop"></i>
-          <i class="fa fa-volume-up"></i>
+          <a href="#" class="fa fa-list"></a>
+          <a href="#" class="fa fa-desktop"></a>
+          <a href="#" class="fa fa-volume-up"></a>
           <div class="play-cursor-line hide-xs">
             <div class="play-cursor-point"></div>
           </div>
