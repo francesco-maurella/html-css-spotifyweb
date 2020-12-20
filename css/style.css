@@ -99,7 +99,7 @@
 /* MAIN TOP SIDE */
 main {
   height: calc(100% - 90px);
-  background: linear-gradient(#0C0E12, #2E3846) 50% no-repeat
+  background: linear-gradient(#0C0E12, #2E3846);
 }
 
 /* Left Bar */
